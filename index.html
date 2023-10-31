@@ -1,93 +1,581 @@
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Carlos Montero</title>
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
-    <link rel="stylesheet" href="css/estilos.css">
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <figure class="logo">
-          
-        </figure>
-        <nav class="menu">
-          <ol>
-            <li>
-              <a class="link" href="#portafolio">Portafolio</a>
-            </li>
-            <li>
-              <a class="link" href="#eventos">Experiencia</a>
-            </li>
-            <li>
-              <a class="link" href="#contacto">Trabajemos juntos</a>
-            </li>
-          </ol>
-        </nav>
-      </div>
-    </header>
-    <section class="hero">
-      <div class="container">
-        <h1>
-          Hola! Soy <strong>Carlos Montero</strong> <br/> Desarrollador  <strong>Java</strong> con <br> pasión por la <strong>enseñanza</strong>
-        </h1>
-        <img class="D:\universidad\Segundo Semestre\TECNOLOGIAS DE INTERNET\Proyectos GibHub\carlospantoja" src="2.jpg" width="500" height="300" alt="imagen principal del sitio"> 
-      </div>
-    </section>
-    <section id="portafolio" class="portfolio">
-      <div class="container">
-        <h2>Portafolio (Proyectos Destacados)</h2>
-        <p class="text-justify">Proyecto uno Presentacion de mi Persona</p>
-      </div>
-      
-    </section>
-    <div class="container">
-      <h2 class="event-list-title">Más sobre mi experiencia</h2>
-      <p class="text-justify">Soy Carlos Montero Pantoja, soy padre de una familia de 3 integrantes en mi familia
-        se compone de hija que se llama Sofia Montero, mi esposa Maria Isabel Fernholz y 
-        mi suegra Juana Maria Soto.
-        Todos somos de la ciudad de La Paz pero actualmente vivimos en la Ciudad de santa cruz de la sierra,
-         mi hija va al colegio tiene 12 años, mi esposa es licenciada economista y actualmente trabaja,
-         mi suegra nos ayuda a los quehaceres de la casa y con la enseñanza de mi hija. 
-        Yo trabajo actualmente en el Instituto Intesem, y actual mente estoy buscando empleo,
-        mis estudiados son varios como ser: Técnico medio en electrónica y electrotecnia,
-        Técnico medio nivel nacional en hardware y redes, Técnico superior en sistemas informáticos,
-        un diplomado en administración y seguridad bancaria, y actualmente cursando licenciatura
-         e ingeniería en sistemas en la universidad adventista de Bolivia.
-        E trabajado en bancos y empresas en el área de soporte, tambien en seguridad bancaria.
-        Mis hobbies es pasar tiempo lo más que se pueda con mi familia y mi impresora en 3D</p>
-    </div>
-    <section id="eventos" class="event-list">
-      <div class="container">
-       
+<!--//Cambios RAmiro**************************************************************** -->
 
-      </div>
-    </section>
-    <section id="contacto" class="contact">
-      <div class="container">
-        <form action="/suscripcion/" class="form-email">
-          <h3>¿Creamos algo juntos?</h3>
-          <input type="text" placeholder="Déjame tu email" id="email">
-          <button>Enviar</button>
-        </form>
-        <div class="social">
-          <a href="https://www.facebook.com/carlos.p.980" class="social-link facebook"></a>
-          <a href="https://instagram.com/cachomontero?utm_source=qr&igshid=OGIxMTE0OTdkZA==" class="social-link instagram"></a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AutoEscuela STARD</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bootstrap 5 landing page template for developers and startups">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- FontAwesome JS-->
+	<script defer src="assets/fontawesome/js/all.min.js"></script>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    
+</head> 
+
+<body>
+    <!-- ******HEADER****** --> 
+    <header id="header" class="header">  
+        <nav class="main-nav navbar-expand-md" role="navigation">  
+	       
+	        <div class="container-fluid position-relative">
+            
+                <a class="logo navbar-brand scrollto" href="#hero">
+                    <span class="logo-icon-wrapper"><img class="logo-icon" src="assets/images/logoStard.png" alt="icon"></span>
+                    <span class="text"><span class="highlight">AUTOESCUELA</span>STARD</span>
+                </a>
+                <!--//logo-->
+            
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse"  aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button><!--//nav-toggle-->
+                
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item"><a class="nav-link scrollto" href="#about">Acerca de</a></li>
+                        <li class="nav-item"><a class="nav-link scrollto" href="#testimonials">Testimonios</a></li>
+                        <li class="nav-item"><a class="nav-link scrollto" href="#features">Cursos                        </a></li>                        
+                        <li class="nav-item"><a class="nav-link scrollto" href="#team">Equipos</a></li>
+                        <li class="nav-item"><a class="nav-link scrollto" href="#pricing">Precios</a></li>
+                        <li class="nav-item"><a class="nav-link scrollto" href="#contact">Contacto</a></li>
+                    </ul><!--//nav-->
+                </div><!--//navabr-collapse-->
+            </div><!--//container-->
+            
+        </nav><!--//main-nav-->                     
+    </header><!--//header-->
+    
+    <div id="hero" class="hero-section">
+        
+        <div id="hero-carousel" class="hero-carousel carousel carousel-fade slide" data-bs-ride="carousel" data-bs-interval="10000">
+            
+            <div class="figure-holder-wrapper">
+        		<div class="container">
+            		<div class="row justify-content-end">
+                		<div class="figure-holder">
+
+                            
+                            
+                            <!--//Cambios RAmiro**************************************************************** -->
+
+
+                	        <img class="figure-image img-fluid" src="assets/images/Obten-tu-licencia.png" alt="image" />
+                        </div><!--//figure-holder-->
+            		</div><!--//row-->
+        		</div><!--//container-->
+    		</div><!--//figure-holder-wrapper-->
+            
+			<!-- Indicators -->
+			<div class="carousel-indicators">
+				<button type="button" class="active" data-bs-slide-to="0" data-bs-target="#hero-carousel" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-slide-to="1" data-bs-target="#hero-carousel" aria-label="Slide 2"></button>
+				<button type="button" data-bs-slide-to="2" data-bs-target="#hero-carousel" aria-label="Slide 3"></button>
+			</div>
+			
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+    			
+				<div class="carousel-item item-1 active">
+					<div class="item-content container">
+    					<div class="item-content-inner">
+				            <h2 class="heading">Obten tu Licencia de Conducción <br class="d-none d-md-block">_</h2>
+				            <p class="intro">Conducir es una habilidad que muchos deseamos pero no todos poseemos. La buena noticia es que con la capacitación adecuada cualquier persona puede aprender y convertirse en el mejor.</p>
+                            <a class="btn btn-primary btn-cta" href="#" target="_blank">Incribirme</a>  
+    					</div><!--//item-content-inner-->
+					</div><!--//item-content-->
+				</div><!--//item-->
+				
+				<div class="carousel-item item-2">
+					<div class="item-content container">
+						<div class="item-content-inner">		                                  
+				            <h2 class="heading">VEHICULOS DE 2 RUEDAS CATEGORIA "M"</h2>
+				            <p class="intro"> TE AYUDAMOSA CONVERTIRTE EN UN CONDUCTOR EXPERTO,</p>
+				            <a class="btn btn-primary btn-cta" href="#" target="_blank">Inscribirme</a>
+    				        
+    					</div><!--//item-content-inner-->
+					</div>
+				</div><!--//item-->
+				
+				<div class="carousel-item item-3">
+					<div class="item-content container">
+						<div class="item-content-inner">
+    				        
+				            <h2 class="heading">CAPACITACIÓN MAQUINARIA PESADA PROFESIONAL "T"</h2>
+				           <!-- <p class="intro">¡OBTÉN TU LICENCIA DE CONDUCIR!</p>   -->                          
+                            <p class="intro">Capacitamos con nuestra propia maquinaria pesada con una enseñanza a nivel profesional.</p>
+				            <a class="btn btn-primary btn-cta" href="#" target="_blank">Inscribirme</a> 
+    				        
+    					</div><!--//item-content-inner-->
+					</div>
+				</div><!--//item-->
+			</div><!--//carousel-inner-->
+		</div><!--//carousel-->
+    </div><!--//hero-->
+    
+    <div id="about" class="about-section">
+        <div class="container text-center">
+            <h2 class="section-title">SOBRE NOSOTROS</h2>
+            <p class="intro">La alta cualificación y la experiencia con la que cuentan los profesores de la Autoescuela STAR hacen que la preparación del permiso de conducir sea un simple tramite, ameno, fácil y económico.</p>        
+            </ul>
+            <div class="items-wrapper row">
+                <div class="item col-md-4 col-12">
+                    <div class="item-inner">
+                        <div class="figure-holder">
+                            <img class="figure-image" src="assets/images/SEGUIP.png" alt="image">
+                        </div><!--//figure-holder-->
+                        <h3 class="item-title">Acreditación SEGIP</h3>
+                        <div class="item-desc mb-3">
+                            Somos una escuela acreditada por SEGIP para otorgar el Certificado de Habilidades de Conducir y ascensos de categorías. <br>
+                            Ofrecemos un programa de preparación en línea para el examen de conducción exclusivo para nuestros alumnos.
+                        </div><!--//item-desc-->
+                       
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                <div class="item col-md-4 col-12">
+                    <div class="item-inner">
+                        <div class="figure-holder">
+                            <img  src="assets/images/figure-1.png" width="190" height="160" alt="image">
+                        </div><!--//figure-holder-->
+                        <h3 class="item-title">Método Especializado</h3>
+                        <div class="item-desc mb-3">
+                            Nuestro enfoque está diseñado especialmente para personas nerviosas, brindando un ambiente de aprendizaje seguro y tranquilo. </div><!--//item-desc-->
+                        
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                <div class="item col-md-4 col-12">
+                    <div class="item-inner">
+                        <div class="figure-holder">
+                            <img class="figure-image" src="assets/images/autos2.png" alt="image">
+                        </div><!--//figure-holder-->
+                        <h3 class="item-title">Vehículos Modernos y Seguros</h3>
+                        <div class="item-desc mb-3">Disponemos de una amplia gama de automóviles de ultimo modelo equipados con sistemas de seguridad avanzados para para garantizar la mejor experiencia de aprendizaje. </div><!--//item-desc-->
+                       
+                </div><!--//item-->
+            </div><!--//items-wrapper-->
+        </div><!--//container-->
+    </div><!--//about-section-->
+    
+
+<!--// FIN      Cambios RAmiro**************************************************************** -->
+
+<div id="testimonials" class="testimonials-section">
+    <div class="container">
+        <h2 class="section-title text-center">Ventas de Autoescuela Master</h2>
+        <div class="item mx-auto">
+            <div class="profile-holder">
+                <img class="profile-image" src="assets/images/profile-1.jpg" alt="profile">
+            </div>
+            <div class="quote-holder">
+                <blockquote class="quote">
+                    <p>1. A lo largo del curso, el automóvil asignado fue uno de los puntos fuertes de la experiencia. El auto se sintió confiable y cómodo, y me sentí seguro y cómodo al conducirlo. La mecánica del auto funcionó bien, y no hubo ningún problema con el motor o los frenos. En general, el auto asignado me dio la confianza necesaria para mejorar mi manejo.</p>
+                    <div class="quote-source">
+                       
+                    </div><!--//quote-source-->
+                </blockquote>
+            </div><!--//quote-holder-->
+        </div><!--//item-->
+        <div class="item item-reversed mx-auto">
+            <div class="profile-holder">
+                <img class="profile-image" src="assets/images/profile-2.jpg" alt="profile">
+            </div>
+            <div class="quote-holder">
+                <blockquote class="quote">
+                    <p>2. El profesor de conducción fue excelente. Fue muy claro y paciente a la hora de enseñarme los fundamentos de la conducción. Me sentí cómodo preguntando cosas, y nunca me hizo sentir como si fuera un estudiante torpe. De hecho, me animó a preguntar y aprender más. Me sentí inspirado para mejorar gracias a su enseñanza. </p>
+                   
+                    </div><!--//quote-source-->
+                </blockquote>
+            </div><!--//quote-holder-->
+        </div><!--//item-->
+        <div class="item mx-auto">
+            <div class="profile-holder">
+                <img class="profile-image" src="assets/images/profile-3.jpg" alt="profile">
+            </div>
+            <div class="quote-holder">
+                <blockquote class="quote">
+                    <p>3. "Este curso de conducción ha sido muy satisfactorio. El profesor fue profesional y amable, y tuvo mucha paciencia conmigo cuando me equivoqué o no entendí bien las instrucciones.</p>
+                    <div class="quote-source">
+                        
+                    </div><!--//quote-source-->
+                </blockquote>
+            </div><!--//quote-holder-->
+        </div><!--//item-->
+        <div class="item item-reversed mx-auto">
+            <div class="profile-holder">
+                <img class="profile-image" src="assets/images/profile-4.jpg" alt="profile">
+            </div>
+            <div class="quote-holder">
+                <blockquote class="quote">
+                    <p>4. La academia de conducción era un lugar muy adecuado para aprender a conducir. El lugar era limpio y bien cuidado, y las instalaciones eran modernas y cómodas. Los profesores tenían una buena actitud y eran profesionales. Los autos asignados eran limpios y en buen estado. En general, sentí que me brindaban todo lo necesario para aprender a conducir de forma segura y con confianza. </p>
+                     <div class="quote-source">
+                        
+                    </div><!--//quote-source-->
+                </blockquote>
+                
+            </div><!--//quote-holder-->
+        </div><!--//item-->
+        <div class="text-center mt-4">
+        <a class="btn btn-inverse btn-cta" href="#" target="_blank">Contactanos!</a>
         </div>
-      </div>
-    </section>
-    <footer class="footer">
-      <div class="container">
-        <div>
-          <p>contactos: 777-90446 <img src="" width="80" alt=""></p>
+    </div><!--//container-->
+</div><!--//testimonials-->
+
+
+
+    
+    <div id="features" class="features-section">
+        <div class="container text-center">
+            <h2 class="section-title">Nuestros Cursos</h2>
+            <!-- <p> class="intro">. </p>  -->          
+            <div class="tabbed-area row">
+                <!-- Nav tabs -->
+                <div class="feature-nav nav nav-pill flex-column col-lg-4 col-md-6 col-12 order-0 order-md-1" role="tablist" aria-orientation="vertical">
+                     <a class="nav-link active mb-lg-3" href="#feature-1" aria-controls="feature-1" data-bs-toggle="pill" role="tab" aria-selected="true"><i class="fa-solid fa-magic me-2"></i>Licencia Categoría Particular 'P'</a>
+                     <a class="nav-link mb-lg-3" href="#feature-2" aria-controls="feature-2" data-bs-toggle="pill" role="tab" aria-selected="false"><i class="fa-solid fa-cubes me-2"></i>Licencia Categoría Profesional 'A'</a>
+                     <a class="nav-link mb-lg-3" href="#feature-3" aria-controls="feature-3" data-bs-toggle="pill" role="tab" aria-selected="false"><i class="fa-solid fa-chart-bar me-2"></i>Ascenso Directo 'P-A' o 'A-B'</a>
+                     <a class="nav-link mb-lg-3" href="#feature-4" aria-controls="feature-4" data-bs-toggle="pill" role="tab" aria-selected="false"><i class="fa-solid fa-code me-2"></i>Ascenso Directo 'B-C'</a>
+                     <a class="nav-link mb-lg-3" href="#feature-5" aria-controls="feature-5" data-bs-toggle="pill" role="tab" aria-selected="false"><i class="fa-solid fa-rocket me-2"></i>Renovaciones Categoría Profesional 'C'</a>
+                     <a class="nav-link mb-lg-3" href="#feature-6" aria-controls="feature-6" data-bs-toggle="pill" role="tab" aria-selected="false"><i class="fa-solid fa-mobile-alt me-2"></i>Licencia Categoría Motociclista 'M'</a>
+                     <a class="nav-link mb-lg-3" href="#feature-7" aria-controls="feature-7" data-bs-toggle="pill" role="tab" aria-selected="false"><i class="fa-solid fa-star me-2"></i>Licencia Maquinaria Pesada Profesional 'T'</a>
+                     <a class="nav-link mb-lg-3" href="#feature-8" aria-controls="feature-8" data-bs-toggle="pill" role="tab" aria-selected="false"><i class="fa-solid fa-heart me-2"></i>Licencia de Conducir en Bolivia siendo Extranjero</a>                   
+                </div>
+                
+                <!-- Tab paneles -->
+                <div class="feature-content tab-content col-lg-8 col-md-6 col-12 order-1 order-md-0">
+                    <div role="tabpanel" class="tab-pane fade show active" id="feature-1">
+                        <a href="#" target="_blank"><img class="img-fluid" src="assets/images/Licencia-categoria-P.png" alt="screenshot" ></a>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="feature-2">
+                        <a href="#" target="_blank"><img class="img-fluid" src="assets/images/Licencia-categoria-A.png" alt="screenshot" ></a>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="feature-3">
+                        <a href="#" target="_blank"><img class="img-fluid" src="assets/images/asecensoPAB.png" alt="screenshot" ></a>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="feature-4">
+                        <a href="#" target="_blank"><img class="img-fluid" src="assets/images/RenocacionBC.png" alt="screenshot" ></a>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="feature-5">
+                        <a href="#" target="_blank"><img class="img-fluid" src="assets/images/catC.jpg" alt="screenshot" ></a>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="feature-6">
+                        <a href="#" target="_blank"><Img class="img-fluid" src="assets/images/Licencia-categoria-M.png" alt="screenshot" ></a>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="feature-7">
+                        <a href="#" target="_blank"><img class="img-fluid" src="assets/images/retro.jpg" alt="screenshot" ></a>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="feature-8">
+                        <a href="#" target="_blank"><img class="img-fluid" src="assets/images/licenciaExtranjero.jpg" alt="screenshot" ></a>
+                    </div>
+                    
+                </div><!--//feature-content-->
+
+                
+            </div><!--//tabbed-area-->
+            
+        </div><!--//container-->
+    </div><!--//features-->
+    
+    <!-- equipo team contenido -->
+    <div class="team-section" id="team">
+        <div class="container text-center">
+            <h2 class="section-title">Nuestro equipo</h2>
+            <div class="story">
+                <p>En Autoescuela Stard, nos enorgullece contar con un equipo de instructores altamente calificados en conducción.</p>
+            </div>
+
+            <div class="d-" >
+            <div class="members-wrapper row" >
+                <div id="carouselExample" class="carousel slide">
+
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 3"></button>
+                      </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+
+                <div class="item ">
+                    <div class="item-inner">
+                        <div class="profile mb-3">
+                            <H1></H1>
+                            <img class="" src="" alt="" />
+                        </div>
+                        
+                        <div class="member-content">
+                            <h3 class="member-name"></h3>
+                            <div class="member-title"></div>
+                            <ul class="social list-inline">
+                                <li class="list-inline-item"><a class="" href="" target="_blank"><i class=""></i></a></li>                      
+            
+                            </ul>
+                            <div class="member-desc">
+                               <p></p>
+                            </div><!--//member-desc-->
+                        </div><!--//member-content-->
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+            </div>
+
+            <div class="carousel-item">
+                <div class="item col-md-12 col-12">
+                    <div class="item-inner">
+                        <div class="profile mb-3">
+                            <H1>Conoce a tu instructor</H1>
+                            <img class="profile-image" src="assets/images/wilson.jpg" alt="Tom Najdek" />
+                        </div>
+                        
+                        <div class="member-content">
+                            <h3 class="member-name">Wilson Ayala Poma</h3>
+                            <div class="member-title">Instructor Categoria "C"</div>
+                            <ul class="social list-inline">
+                             
+                                <li class="list-inline-item"><a class="facebook" href="https://www.facebook.com/wilson.ayala.127/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                <li class="list-inline-item"><a class="linkedin" href="https://www.tiktok.com/@wilsonayalapoma?is_from_webapp=1&sender_device=pc" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li class="list-inline-item"><a class="github" href="#" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+
+                            </ul>
+                            <div class="member-desc">
+                                <p>Mi tarea como Instructor de Conducción es la responsabilidad, puntualidad y proporcionar instrucción de conducción adecuada a sus necesidades para los estudiantes, ayudándoles a desarrollar las habilidades y conocimientos necesarios para aprobar el examen de conducir y convertirse en conductores seguros. Debemos tener la habilidad de ser pacientes, conocedores y capaces de comunicarse efectivamente con los estudiantes.</p>
+                            </div><!--//member-desc-->
+                        </div><!--//member-content-->
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+            </div>
+
+
+            <div class="carousel-item">
+                <div class="item col-md-12 col-12">
+                    <div class="item-inner">
+                        <div class="profile mb-3">
+                            <H1></H1>
+                            <img class="" src="" alt="" />
+                        </div>
+                        
+                        <div class="member-content">
+                            <h3 class="member-name"></h3>
+                            <div class="member-title"></div>
+                            <ul class="social list-inline">
+                                <li class=""><a class="" href="" target="_blank"><i class=""></i></a></li>
+                                
+
+                            </ul>
+                            <div class="member-desc">
+                                <p></p>
+
+                            </div><!--//member-desc-->
+                        </div><!--//member-content-->
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+            </div>
+
+
+            <div class="carousel-item">
+                <div class="item col-md-12 col-12">
+                    <div class="item-inner">
+                        <div class="profile mb-3">
+                            <H1>Conoce a tu instructor</H1>
+                            <img class="profile-image" src="assets/images/carlosmontero.jpg" alt="Tom Najdek" />
+                        </div>
+                        
+                        <div class="member-content">
+                            <h3 class="member-name">Carlos Montero Pantoja</h3>
+                            <div class="member-title">Instructor Categoria "C"</div>
+                            <ul class="social list-inline">
+                                <!--<li class="list-inline-item"><a class="twitter" href="#" target="_blank"><i class="fab fa-whatsapp"></i></a></li>-->
+                                <li class="list-inline-item"><a class="facebook" href="https://www.facebook.com/carlos.p.980?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                <li class="list-inline-item"><a class="linkedin" href="https://instagram.com/cachomontero?igshid=MzMyNGUyNmU2YQ==" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li class="list-inline-item"><a class="github" href="https://www.tiktok.com/@sofia_rbx._.xd?_t=8ghRFs3w0sI&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+
+                            </ul>
+                            <div class="member-desc">
+                                <p>Instruir a particulares sobre técnicas, destrezas y condiciones de conducción, explicando y demostrando el funcionamiento de los frenos, embrague, selección de cambios, transmisión automática, señales y luces, y supervisar durante la práctica de conducción.</p>
+                            </div><!--//member-desc-->
+                        </div><!--//member-content-->
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+            </div>
+
+
+            <div class="carousel-item">
+                <div class="item col-md-12 col-12">
+                    <div class="item-inner">
+                        <div class="profile mb-3">
+                            <H1></H1>
+                            <img class="" src="" alt="" />
+                        </div>
+                        
+                        <div class="member-content">
+                            <h3 class="member-name"></h3>
+                            <div class="member-title"></div>
+                            <ul class="social list-inline">
+                                <!-- <li class="list-inline-item"><a class="twitter" href="#" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                                <li class="list-inline-item"><a href="#" target="_blank"><i class="fa-solid fa-facebook-f"></i></a></li>
+                                <li class="list-inline-item"><a class="linkedin" href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li class="list-inline-item"><a class="github" href="#" target="_blank"><i class="fab fa-tiktok"></i></a></li> -->
+
+                            </ul>
+                            <div class="member-desc">
+                                <p></p>
+                            </div><!--//member-desc-->
+                        </div><!--//member-content-->
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+            </div>
+            
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+            </div> 
+
+            </div><!--//members-wrapper-->
+       
+            <div class="text-center mt-5">
+	            <a class="btn btn-cta btn-primary" href="#contact">Contactanos</a>
+            </div>
         </div>
-        <div>
-          <p>
-            Diseñado por <a href="#">Carlos Montero Pantoja</a>
-          </p>
+    </div><!--//team-section-->
+    <!-- fin  -->
+
+
+
+
+
+
+
+    
+    <div id="pricing" class="pricing-section">
+        <div class="container text-center">
+            <h2 class="section-title">Nuestros Cursos de Conducion</h2>
+            <div class="intro">Somos una empresa dedicada a la enseñanza de conducción con mas de 10 años de experiencia y 100% practicos desde el primer dia. </div>
+            <div class="pricing-wrapper row">
+                <div class="item item-1 col-md-4 col-12">
+                    <div class="item-inner">
+                        <h3 class="item-heading">Curso de Motocicleta<br><span class="item-heading-desc">Aprende las técnicas y habilidades necesarias para conducir.</span></h3>
+                        <div class="price-figure">
+                            <span class="currency">Bs.</span><span class="number">350</span>
+                        </div><!--//price-figure-->
+                        <ul class="list-unstyled mb-3">
+	                        <li class="mb-2"><i class="fa-solid fa-check"></i> 1 Semana de instruccion</li>
+	                        <li class="mb-2"><i class="fa-solid fa-check"></i> desde el primer dia al Volante</li>
+                            <li class="mb-2"><i class="fa-solid fa-times"></i> 0 reprobaciones</li>
+                        </ul>
+                        <div class="mb-3"><a href="#" target="_blank">Mas Detalles</a></div>
+                        <a class="btn btn-inverse btn-cta" href="#">Inscribirme</a>
+                        
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                <div class="item item-2 col-md-4 col-12">
+                    <div class="item-inner">
+                        <h3 class="item-heading">Curso de Condución<br><span class="item-heading-desc">Aprende las técnicas y habilidades necesarias para conducir</span></h3>
+                       
+                        <div class="price-figure">
+                            <span class="currency">Bs.</span><span class="number">500</span>
+                        </div><!--//price-figure-->
+                        <ul class="list-unstyled mb-3">
+	                        <li class="mb-2"><i class="fa-solid fa-check"></i> 10 horas de clases 100% practicas frente al volante</li>
+	                        <li class="mb-2"><i class="fa-solid fa-times"></i> Clases teóricas en línea, disponibles 24/7</li>
+	                        <li class="mb-2"><i class="fa-solid fa-check"></i> Horarios a elección (8:00 a 21:00)</li>
+                        </ul>
+                        <div class="mb-3"><a href="#" target="_blank">Mas Detalles</a></div>
+                        <a class="btn btn-inverse btn-cta" href="#">Inscribirme</a>
+                        
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                
+                <div class="item item-3 col-md-4 col-12">
+                    <div class="item-inner">
+                        <h3 class="item-heading">Curso de Maquinista<br><span class="item-heading-desc">Aprende las técnicas y habilidades necesarias para conducir</span></h3>
+                        <div class="price-figure">
+                            <span class="currency">Bs.</span><span class="number">1500</span>
+                        </div><!--//price-figure-->
+                        <ul class="list-unstyled mb-3">
+	                        <li class="mb-2"><i class="fa-solid fa-check"></i> Uso de EPP</li>
+	                        <li class="mb-2"><i class="fa-solid fa-check"></i> Avance y retroceso de vehículo (en área 1)</li>
+	                        <li class="mb-2"><i class="fa-solid fa-check"></i> Maniobra con herramienta que caracteriza al vehículo</li>
+                        </ul>
+                        <div class="mb-3"><a href="#" target="_blank">Mas Detalles</a></div>
+                        <a class="btn btn-inverse btn-cta" href="#" target="_blank">Inscribirme</a>
+                        
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+            </div><!--//pricing-wrapper-->
+            
+        </div><!--//container-->
+    </div><!--//pricing-section-->
+
+
+    <div id="contact" class="contact-section">
+        <div class="container text-center">
+            <h2 class="section-title">Contactos</h2>
+            <div class="contact-content">
+                <div class="row">
+                    <div class="col-md-6">
+                        <!-- Contenido existente de la sección de contacto -->
+                        <p>Nos encontramos en la ciudad de La Paz en la zona Tembladerani, calle Jose Saravia y Calle David Crespo #1850: más informaciones al siguiente teléfono Móvil 73241949.</p>
+              
+
+                    </div>
+                    <div class="col-md-6">
+                        <!-- Formulario de contacto -->
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Nombre:</label>
+                                <input type="text" id="name" name="name" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Correo Electrónico:</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensaje:</label>
+                                <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+    </div>
+    
+
+
+
+
+    <footer class="footer text-center">
+        <div class="container">
+            <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+            <small class="copyright">Designed with <span class="sr-only">love</span><i class="fa-solid fa-heart"></i> by <a href="https://themes.3rdwavemedia.com/" target="_blank">grupo 6</a> for developers</small>
+            
+            
+        </div><!--//container-->
     </footer>
-  </body>
-</html>
+     
+    <!-- Javascript -->          
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script> 
+    <script src="assets/js/main.js"></script> 
+       
+</body>
+</html> 
+
